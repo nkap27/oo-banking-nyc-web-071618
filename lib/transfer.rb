@@ -15,7 +15,6 @@ end
 def execute_transaction
   #check if sender has enough funds
   if @status == "pending"
-
     if sender.balance >= @amount
       receiver.deposit(@amount)
       sender.balance -= @amount
