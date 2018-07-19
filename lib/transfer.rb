@@ -23,9 +23,7 @@ def execute_transaction
     else
       @status = "rejected"
       return "Transaction rejected. Please check your account balance."
-
     end
-
   else
     return
   end
